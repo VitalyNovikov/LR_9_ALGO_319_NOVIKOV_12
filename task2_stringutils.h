@@ -5,14 +5,16 @@
 
 #include <string>  // Підключення бібліотеки для роботи з рядками
 
+using namespace std;
+
 // Функція підрахунку кількості слів у рядку
 // Приймає: вихідний рядок
 // Повертає: кількість слів
-int countWords(const std::string& text);
+int countWords(const string& text);
 
 // Функція реверсу рядка
 // Приймає: вихідний рядок
 // Повертає: реверсований рядок
-std::string reverseString(const std::string& text);
+string reverseString(const string& text);
 
 #endif // TASK2_STRINGUTILS_H
