@@ -3,11 +3,13 @@
 #include "task2_stringutils.h" // Підключаємо заголовковий файл
 #include <sstream> // Підключаємо бібліотеку для роботи з потоками
 
+using namespace std;
+
 // Функція підрахунку кількості слів у рядку
-int countWords(const std::string& text) {
-    std::istringstream stream(text); // Створюємо потік для розбиття рядка на слова
+int countWords(const string& text) {
+    istringstream stream(text); // Створюємо потік для розбиття рядка на слова
     int count = 0; // Лічильник слів
-    std::string word; // Змінна для зберігання окремого слова
+    string word; // Змінна для зберігання окремого слова
     
     // Читаємо слова з потоку
     while (stream >> word) {
@@ -17,6 +19,6 @@ int countWords(const std::string& text) {
 }
 
 // Функція реверсу рядка
-std::string reverseString(const std::string& text) {
-    return std::string(text.rbegin(), text.rend()); // Використовуємо реверсний ітератор
+string reverseString(const string& text) {
+    return string(text.rbegin(), text.rend()); // Використовуємо реверсний ітератор
 }
