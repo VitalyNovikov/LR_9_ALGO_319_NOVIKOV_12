@@ -5,14 +5,16 @@
 
 #include <string> // Підключення бібліотеки для роботи з рядками
 
+using namespace std;
+
 // Функція для шифрування рядка методом Цезаря
 // Приймає: вихідний рядок та кількість зміщень
 // Повертає: зашифрований рядок
-std::string encryptCaesar(const std::string& text, int shift);
+string encryptCaesar(const string& text, int shift);
 
 // Функція для розшифрування рядка методом Цезаря
 // Приймає: зашифрований рядок та кількість зміщень
 // Повертає: розшифрований рядок
-std::string decryptCaesar(const std::string& text, int shift);
+string decryptCaesar(const string& text, int shift);
 
 #endif // TASK1_ENCRYPTOR_H
